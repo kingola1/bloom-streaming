@@ -908,6 +908,10 @@ select {
   flex-basis: 40%;
 }
 
+.basis-full {
+  flex-basis: 100%;
+}
+
 .origin-\[0\] {
   transform-origin: 0;
 }
@@ -1581,6 +1585,14 @@ select {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:basis-3\/5 {
+    flex-basis: 60%;
+  }
+
+  .md\:basis-2\/5 {
+    flex-basis: 40%;
   }
 
   .md\:grid-cols-2 {
