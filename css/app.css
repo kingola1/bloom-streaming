@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* CUSTOM STYLES */
+.box-border-gradient {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(rgb(255, 129, 0), rgb(73, 49, 25), transparent)
+    1;
+}
+
+.box-border-raius-gradient {
+  background: linear-gradient(var(--rgb(255, 129, 0)), var(--transparent))
+      padding-box,
+    linear-gradient(rgb(255, 129, 0), transparent) border-box;
+  border-radius: 50em;
+  border-width: 1px;
+}
+/* END OF CUSTOM STYLES */
