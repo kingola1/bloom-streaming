@@ -16,6 +16,10 @@ nav {
   font-family: "Poppins", sans-serif;
 }
 
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url(../hero-bg.png);
@@ -39,6 +43,12 @@ nav {
   object-position: center;
 }
 
+@media (max-width: 426px) {
+  .contact-hero-section {
+    height: auto;
+  }
+}
+
 .hero-section .details {
   background: rgba(255, 129, 0, 0.6);
 }
@@ -54,4 +64,8 @@ nav {
 
 .pill:hover {
   transform: rotate(15deg);
+}
+
+.contact-main {
+  background-color: #eeeded;
 }
