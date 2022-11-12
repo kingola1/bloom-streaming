@@ -11,7 +11,7 @@
   <body>
     <!-- NAVBAR SECTION -->
     <nav
-      class="shadow shadow-xl bg-gradient-to-r from-bloom-black via-bloom-orange to-bloom-orange pb-5 z-40"
+      class="shadow shadow-xl bg-gradient-to-r from-bloom-black via-bloom-orange to-bloom-orange py-5 px-5 z-40"
     >
       <div class="mx-15 flex justify-between md:justify-around items-stretch">
         <!-- BLOOM LOGO -->
@@ -168,128 +168,172 @@
 
     <!-- HERO SECTION -->
     <section class="contact-hero-section static h-full backdrop-blur-lg">
-      <div
-        class="details absolute p-5 rounded-md bottom-[7rem] md:bottom-[20rem] p-20 z-10 lg:p-20"
-      >
-        <h1 class="text-4xl font-bold text-bloom-black">Get in Touch</h1>
+      <div class="details px-5 pt-[10rem] md:bottom-[20rem] p-20">
+        <h1 class="text-2xl mb-5 md:text-4xl font-bold text-bloom-black">
+          Get in Touch
+        </h1>
+        <p class="font-semibold text-md">
+          Have questions about our streaming services, Contact us from one of
+          our contact info or fill the form and state how we can help you.
+        </p>
       </div>
     </section>
     <!-- HERO SECTION -->
 
     <main class="container mx-auto px-2 md:px-20">
-      <div class="flex flex-col md:flex-row">
-        <div
-          class="bg-white items-center justify-center p-10 shadow-lg basis-full md:basis-3/5"
-        >
-          <form>
-            <div class="grid md:grid-cols-2 md:gap-6">
+      <div class="h-screen w-full relative">
+        <div class="flex flex-col md:flex-row top-[-7.5rem]">
+          <!-- CONTACT FORM -->
+          <div
+            class="bg-white items-center justify-center p-10 shadow-lg basis-full md:basis-[70%]"
+          >
+            <div class="flex flex-row justify-between mb-5">
+              <h1 class="font-bold">Send a Message</h1>
+
+              <img src="Group Message icon.svg" alt="Mail icon" />
+            </div>
+            <form>
+              <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 mb-6 w-full group">
+                  <input
+                    type="text"
+                    name="floating_first_name"
+                    id="floating_first_name"
+                    class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-bloom-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=""
+                    required=""
+                  />
+                  <label
+                    for="floating_first_name"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >First name</label
+                  >
+                </div>
+                <div class="relative z-0 mb-6 w-full group">
+                  <input
+                    type="text"
+                    name="floating_last_name"
+                    id="floating_last_name"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-bloom-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required=""
+                  />
+                  <label
+                    for="floating_last_name"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Last name</label
+                  >
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 mb-6 w-full group">
+                  <input
+                    type="tel"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    name="floating_phone"
+                    id="floating_phone"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-bloom-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required=""
+                  />
+                  <label
+                    for="floating_phone"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Phone number (123-456-7890)</label
+                  >
+                </div>
+                <div class="relative z-0 mb-6 w-full group">
+                  <input
+                    type="email"
+                    name="floating_email"
+                    id="floating_email"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-bloom-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required=""
+                  />
+                  <label
+                    for="floating_email"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Email</label
+                  >
+                </div>
+              </div>
+
               <div class="relative z-0 mb-6 w-full group">
                 <input
                   type="text"
-                  name="floating_first_name"
-                  id="floating_first_name"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  name="floating_company"
+                  id="floating_company"
+                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-bloom-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   required=""
                 />
                 <label
-                  for="floating_first_name"
+                  for="floating_company"
                   class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                  >First name</label
+                  >Business Name</label
                 >
               </div>
               <div class="relative z-0 mb-6 w-full group">
                 <input
                   type="text"
-                  name="floating_last_name"
-                  id="floating_last_name"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  name="floating_message"
+                  id="floating_message"
+                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-bloom-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   required=""
                 />
                 <label
-                  for="floating_last_name"
+                  for="floating_message"
                   class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                  >Last name</label
+                  >How may we be of Help</label
                 >
               </div>
+
+              <div class="flex items-center justify-center">
+                <button
+                  type="submit"
+                  class="text-bloom-black bg-bloom-orange hover:text-white focus:ring-4 focus:outline-none focus:ring-bloom-orange font-bold text-md rounded-xl text-lg w-80 py-2.5"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- CONTACT FORM -->
+
+          <!-- CONTACT INFO -->
+          <div
+            class="bg-bloom-black text-white flex flex-col basis-full gap-8 p-5 md:basis-[30%] p-5"
+          >
+            <h1 class="mb-5 font-semibold text-lg">Conatct Info</h1>
+
+            <div class="flex flex-row gap-4 items-center -ml-2">
+              <img src="Ringing Phone.svg" alt="Telephone Icon" />
+              <span class="text-md font-normal">+234 708 627 8644</span>
             </div>
-            <div class="grid md:grid-cols-2 md:gap-6">
-              <div class="relative z-0 mb-6 w-full group">
-                <input
-                  type="tel"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                  name="floating_phone"
-                  id="floating_phone"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" "
-                  required=""
-                />
-                <label
-                  for="floating_phone"
-                  class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                  >Phone number (123-456-7890)</label
-                >
-              </div>
-              <div class="relative z-0 mb-6 w-full group">
-                <input
-                  type="email"
-                  name="floating_email"
-                  id="floating_email"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" "
-                  required=""
-                />
-                <label
-                  for="floating_email"
-                  class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                  >Email</label
-                >
-              </div>
+            <div class="flex flex-row gap-4 items-center">
+              <img src="contact-mail.svg" alt="Telephone Icon" />
+              <span class="text-md font-normal">info@bloomdigitmedia.com</span>
             </div>
 
-            <div class="relative z-0 mb-6 w-full group">
-              <input
-                type="text"
-                name="floating_company"
-                id="floating_company"
-                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                placeholder=" "
-                required=""
-              />
-              <label
-                for="floating_company"
-                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                >Business Name</label
-              >
+            <div class="flex flex-row gap-8 items-center">
+              <a href="instagram.com">
+                <img src="Instagram logo.svg" alt="Instagram Icon" />
+              </a>
+              <a href="twitter.com">
+                <img src="Twitter.svg" alt="Twitter Icon" />
+              </a>
+              <a href="Whatsapp.com">
+                <img src="Whatsapp.svg" alt="Whatsapp Icon" />
+              </a>
+              <a href="linkedin.com">
+                <img src="Linkedin.svg" alt="Linkedin Icon" />
+              </a>
             </div>
-            <div class="relative z-0 mb-6 w-full group">
-              <input
-                type="text"
-                name="floating_message"
-                id="floating_message"
-                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                placeholder=" "
-                required=""
-              />
-              <label
-                for="floating_message"
-                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                >How may we be of Help</label
-              >
-            </div>
-
-            <button
-              type="submit"
-              class="self-center text-white bg-bloom-orange hover:text-bloom-black focus:ring-4 focus:outline-none focus:ring-bloom-orange font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
-            >
-              Submit
-            </button>
-          </form>
+          </div>
+          <!-- CONTACT INFO -->
         </div>
-        <div
-          class="bg-bloom-black text-white flex flex-col basis-full md:basis-2/5"
-        ></div>
       </div>
     </main>
 
