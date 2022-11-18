@@ -22,7 +22,7 @@ nav {
 
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url(../hero-bg.png);
+    url(../banner.png);
   max-width: 100vw;
   width: 100%;
   height: 80vh;
