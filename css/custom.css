@@ -16,6 +16,11 @@ nav {
   font-family: "Poppins", sans-serif;
 }
 
+hr {
+  width: 70px;
+  height: 30px;
+}
+
 .poppins {
   font-family: "Poppins", sans-serif;
 }
